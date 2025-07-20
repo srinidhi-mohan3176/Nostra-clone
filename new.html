@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+       
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="bg-black text-white p-3 align-center justify-between flex shadow-2xl sticky top-0 z-10">
+
+
+        <h1 class="text-3xl font-semibold ">NOSTRA</h1>
+        <a class="hover:underline relative top-2 right-7 hidden md:block" href="index.html">Home</a>
+        <svg id="menubar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-7 h-7 align-center pt-2 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        </div>
+
+    <div id="sidenav" class="bg-black text-white fixed top-0 right-0 z-20 w-1/2 h-screen"
+        style="right: -50%; transition: right 0.3s ease-in-out;">
+        <div class="text-right p-5">
+            <p id="close-nav" class="cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-5 text-white p-4">
+            <a class="cursor-pointer hover:underline" href="index.html">Home</a>
+            <a class="cursor-pointer hover:underline" href="new.html">New Arrival</a>
+            <a class="cursor-pointer hover:underline" href="most.html">Most Wanted</a>
+            <a class="cursor-pointer hover:underline" href="collections.html">Collections</a>
+            <a class="cursor-pointer hover:underline" href="contact.html">Contact Us</a>
+        </ul>
+    </div>
+
+    </header>
+    <!--section-->
+    <div>
+        <h1 class="pt-10 text-black text-center font-bold text-4xl">NEW ARRIVAL</h1>
+
+        <div class=" pt-10 text-center grid grid-cols-2 md:grid-cols-4">
+           <div>
+                <img class="w-60 h-65 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/m1.jpg"
+               
+                    alt="plant">
+                <h1 class="pt-2">Duo Drape Combo</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img class="w-60 h-65 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/m10.jpg"
+                    alt="plant">
+                <h1 class="pt-2">Crisp Collar Set</h1>
+                <p>$70</p>
+            </div>
+            <div>
+                <img class="w-60 h-65 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/m3.jpg"
+                    alt="plant">
+                <h1 class="pt-2">Whiteout Blend</h1>
+                <p>$90</p>
+            </div>
+            <div>
+                <img class="w-60 h-65 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/m4.jpg"
+                    alt="plant">
+                <h1 class="pt-2">Pastel Power Pair</h1>
+                <p>$50</p>
+            </div>
+            <div>
+                <img class="w-60 h-65 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/m10.jpg"
+                    alt="plant">
+                <h1 class="pt-2">Monochrome Muse</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img class="w-60 h-65 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/m9.jpg"
+                    alt="plant">
+                <h1 class="pt-2">Modern Metro Combo</h1>
+                <p>$70</p>
+            </div>
+            <div>
+                <img class="w-60 h-65 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/m12.jpg"
+                    alt="plant">
+                <h1 class="pt-2">Executive Edit</h1>
+                <p>$90</p>
+            </div>
+            <div>
+                <img class="w-60 h-65 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/m8.jpg"
+                    alt="plant">
+                <h1 class="pt-2">Silhouette Series</h1>
+                <p>$50</p>
+            </div>
+        </div>
+    </div>
+     <!--footer-->
+    <div>
+        <div class="bg-black text-white p-10 mt-5">
+            <h1 class="text-4xl font-bold ">Nostra</h1>
+            <p class="pt-5">The standard chunk of lorem ipsum used since the 1500s is reproduced below for those
+                interest.</p>
+            <p class="pt-5">@ 2025 Nostra.com</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    var sidenav = document.getElementById("sidenav");
+    var menubar = document.getElementById("menubar");
+    var closeNav = document.getElementById("close-nav");  // Get the close button
+
+    // Open the sidebar when menu icon is clicked
+    menubar.addEventListener("click", function () {
+        sidenav.style.right = "0";
+    });
+
+    // Close the sidebar when 'X' is clicked
+    closeNav.addEventListener("click", function () {
+        sidenav.style.right = "-50%";
+    });
+</script>
+
+
+</html>

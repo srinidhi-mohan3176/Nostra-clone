@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nostra | Collection</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1>NOSTRA</h1>
+        <a class="hover:underline relative top-2 right-7" href="index.html">Home</a>
+
+        <svg id="menubar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-7 h-7 md:hidden cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+    </header>
+
+    <div id="sidenav" class="bg-black text-white fixed top-0 right-0 z-20 w-1/2 h-screen"
+        style="right: -50%; transition: right 0.3s ease-in-out;">
+        <div class="text-right p-5">
+            <p id="close-nav" class="cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-5 text-white p-4">
+            <a class="cursor-pointer hover:underline" href="index.html">Home</a>
+            <a class="cursor-pointer hover:underline" href="new.html">New Arrival</a>
+            <a class="cursor-pointer hover:underline" href="most.html">Most Wanted</a>
+            <a class="cursor-pointer hover:underline" href="collections.html">Collections</a>
+            <a class="cursor-pointer hover:underline" href="contact.html">Contact Us</a>
+        </ul>
+    </div>
+
+    </header>
+
+
+    <!-- Main Layout -->
+    <main class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h1>FILTERS</h1>
+            <h2>Occasion</h2>
+            <label><input type="checkbox" /> Summer</label><br />
+            <label><input type="checkbox" /> Party</label><br />
+            <label><input type="checkbox" /> Beach</label>
+
+            <h2>Colours</h2>
+            <label><input type="checkbox" /> Red</label><br />
+            <label><input type="checkbox" /> Blue</label><br />
+            <label><input type="checkbox" /> White</label><br />
+            <label><input type="checkbox" /> Green</label>
+
+            <h2>Age</h2>
+            <label><input type="checkbox" /> New</label><br />
+            <label><input type="checkbox" /> Old</label>
+
+            <h2>Price</h2>
+            <label><input type="checkbox" /> Under ₹500</label><br />
+            <label><input type="checkbox" /> ₹500 - ₹1000</label><br />
+            <label><input type="checkbox" /> ₹1000 - ₹5000</label><br />
+            <label><input type="checkbox" /> ₹5000+</label>
+
+            <h2>Delivery Day</h2>
+            <label><input type="checkbox" /> Get it by tomorrow</label><br />
+            <label><input type="checkbox" /> Get it in 2 day</label><br />
+
+
+            <h2>Size</h2>
+            <label><input type="checkbox" /> S </label>
+            <label><input type="checkbox" /> M</label><br>
+            <label><input type="checkbox" /> L </label>
+            <label><input type="checkbox" /> XL </label><br>
+            <label><input type="checkbox" /> 2xL </label>
+            <label><input type="checkbox" /> 3XL </label><br>
+            <label><input type="checkbox" /> 4XL </label>
+
+
+            <h2>Price</h2>
+            <label><input type="checkbox" /> Rayon </label><br>
+            <lable><input type="checkbox" /> Silk </lable><br>
+            <label><input type="checkbox" /> Rayon </label><br>
+            <lable><input type="checkbox" /> Silk </lable><br>
+            <label><input type="checkbox" /> Rayon </label><br>
+            <lable><input type="checkbox" /> Silk </lable><br>
+            <label><input type="checkbox" /> Rayon </label><br>
+            <lable><input type="checkbox" /> Silk </lable><br>
+
+
+        </aside>
+
+
+        <!--section-->
+        <div>
+            <div class="text-center pt-10 ">
+                <h1 class="font-bold text-3xl pb-6">Our Products</h1>
+                <input id="search" type="text" class="border border-black p-2 " style="width: 50%;"></imput>
+            </div>
+
+
+            <div id="productcontainer" class=" pt-10 text-center grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div>
+                    <img class="w-80 h-85 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/n1.jpg"
+                        alt="plant">
+                    <h1 class="pt-2">Midnight Royal</h1>
+                    <p>$20</p>
+                </div>
+                <div>
+                    <img class="w-80 h-85 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/n2.jpg"
+                        alt="plant">
+                    <h1 class="pt-2"> Ivory Charm</h1>
+                    <p>$70</p>
+                </div>
+                <div>
+                    <img class="w-80 h-85 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/n3.jpg"
+                        alt="plant">
+                    <h1 class="pt-2">Sleek Sartorial</h1>
+                    <p>$90</p>
+                </div>
+                <div>
+                    <img class="w-80 h-85 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/n4.jpg"
+                        alt="plant">
+                    <h1 class="pt-2">Gentleman's Edge</h1>
+                    <p>$50</p>
+                </div>
+                <div>
+                    <img class="w-80 h-85 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/n5.jpg"
+                        alt="plant">
+                    <h1 class="pt-2">Boardroom Elegance</h1>
+                    <p>$20</p>
+                </div>
+                <div>
+                    <img class="w-80 h-85 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/n6.jpg"
+                        alt="plant">
+                    <h1 class="pt-2">Tailored Shadow</h1>
+                    <p>$70</p>
+                </div>
+                <div>
+                    <img class="w-80 h-85 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/n7.jpg"
+                        alt="plant">
+                    <h1 class="pt-2">Regal Thread</h1>
+                    <p>$90</p>
+                </div>
+                <div>
+                    <img class="w-80 h-85 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/n8.jpg"
+                        alt="plant">
+                    <h1 class="pt-2">Urban Luxe</h1>
+                    <p>$50</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <div>
+        <div class="bg-black text-white p-10 mt-5">
+            <h1 class="text-4xl font-bold ">Nostra</h1>
+            <p class="pt-5">The standard chunk of lorem ipsum used since the 1500s is reproduced below for those
+                interest.</p>
+            <p class="pt-5">@ 2025 Nostra.com</p>
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+<!-- Script (must be placed at the end) -->
+<script>
+    var sidenav = document.getElementById("sidenav");
+    var menubar = document.getElementById("menubar");
+    var closeNav = document.getElementById("close-nav");  // Get the close button
+
+    // Open the sidebar when menu icon is clicked
+    menubar.addEventListener("click", function () {
+        sidenav.style.right = "0";
+    });
+
+    // Close the sidebar when 'X' is clicked
+    closeNav.addEventListener("click", function () {
+        sidenav.style.right = "-50%";
+    });
+</script>
+
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOSTRA</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+<div class="bg-black h-24 flex items-center justify-between sticky top-0 z-10 text-white px-5">
+  <h1 class="text-xl font-extrabold">NOSTRA</h1>
+
+  <svg id="menubar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+    stroke-width="1.5" stroke="currentColor" class="w-7 h-7 md:hidden cursor-pointer">
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+  </svg>
+
+  <ul class="hidden md:flex gap-5 text-gray-200">
+    <li><a class="hover:underline" href="login.html">LOGIN</a></li>
+    <li><a class="hover:underline" href="signup.html">SIGN UP</a></li>
+  </ul>
+</div>
+
+<!-- Sidebar -->
+<div id="sidenav"
+  class="bg-black text-white fixed top-0 right-0 z-20 w-1/2 h-screen"
+  style="right: -50%; transition: right 0.3s ease-in-out;">
+  <div class="text-right p-5">
+    <p id="close-nav" class="cursor-pointer">X</p>
+  </div>
+  <ul class="flex flex-col gap-5 text-white p-4">
+    <a class="cursor-pointer hover:underline" href="index.html">Home</a>
+    <a class="cursor-pointer hover:underline" href="new.html">New Arrival</a>
+    <a class="cursor-pointer hover:underline" href="most.html">Most Wanted</a>
+    <a class="cursor-pointer hover:underline" href="collections.html">Collections</a>
+    <a class="cursor-pointer hover:underline" href="contact.html">Contact Us</a>
+  </ul>
+</div>
+
+
+
+  <!--navbar 2-->
+  <div class="hidden md:flex justify-around gap-9 md:gap-12 m-5 bg-black text-green-50 font-sans relative top-10 p-5">
+    <a class="cursor-pointer hover:underline" href="index.html">Home</a>
+    <a class="cursor-pointer hover:underline" href="new.html">New Arrival</a>
+    <a class="cursor-pointer hover:underline" href="most.html">Most Wanted</a>
+    <a class="cursor-pointer hover:underline" href="collections.html">Collections</a>
+    <a class="cursor-pointer hover:underline" href="contact.html">Contact Us</a>
+  </div>
+
+  <!--slider-->
+  <div class="slider">
+    <div class="slides" id="slides">
+      <div class="slide"><img src="./image/1.png" alt="Shirt Banner 1"></div>
+      <div class="slide"><img src="./image/2.png" alt="Shirt Banner 2"></div>
+      <div class="slide"><img src="./image/4.png" alt="Shirt Banner 3"></div>
+    </div>
+    <div class="buttons">
+      <button onclick="prevSlide()">❮</button>
+      <button onclick="nextSlide()">❯</button>
+    </div>
+  </div>
+
+  <!--brands-->
+  <div>
+    <h1 class="text-4xl pl-10 pt-6 font-extrabold">Brands</h1>
+    <div class="grid grid-cols-3 mt-5  rounded-e-full gap-5 text-center md:grid-cols-6  mt-5 rounded-e-full">
+      <div>
+        <img class="w-40 h-40 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/b1.png" alt="plant">
+        <h1 class="pt-2">Behance</h1>
+
+      </div>
+      <div>
+        <img class="w-40 h-40 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/b2.png" alt="plant">
+        <h1 class="pt-2">Adidas</h1>
+
+      </div>
+      <div>
+        <img class="w-40 h-40 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/b3.png" alt="plant">
+        <h1 class="pt-2">Solana</h1>
+
+      </div>
+      <div>
+        <img class="w-40 h-40 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/b4.png" alt="plant">
+        <h1 class="pt-2">Sprout social</h1>
+
+      </div>
+      <div>
+        <img class="w-40 h-40 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/b7.png" alt="plant">
+        <h1 class="pt-2">H&M</h1>
+
+      </div>
+      <div>
+        <img class="w-40 h-40 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/b8.png" alt="plant">
+        <h1 class="pt-2">Puma</h1>
+
+      </div>
+    </div>
+  </div>
+
+  <!--message-->
+  <div class="flex justify-around text-center align-center pt-10 mt-6">
+    <p>Delivering Exceptional Customer Experiences.</p>
+    <p>||We make sure our customers enjoy the best shopping experience.</p>
+  </div>
+
+
+  <!--about us-->
+  <div>
+
+
+    <div class="p-5 pt-10 md:flex">
+
+      <div class="custom-card1">
+        <img class="w-10" src="./image/check-mark.png">
+
+        <h4 class=" text-xl font-bold pt-2"> Premium Quality Assured</h4>
+
+        <p class="pt-2 ">We handpick only the finest products to deliver excellence, trust, and lasting satisfaction.
+        </p>
+      </div>
+      <div class="custom-card2">
+
+        <img class="w-10 " src="./image/smile.png">
+
+        <h4 class=" text-xl font-bold pt-2">Customer Happiness First</h4>
+
+        <p class="pt-2">Your joy matters! We’re committed to delivering products that exceed your expectations.</p>
+      </div>
+      <div class="custom-card3">
+
+        <img class="w-10 " src="./image/order.png">
+
+        <h4 class=" text-xl font-bold pt-2"> Fresh Picks Daily</h4>
+
+        <p class="pt-2">Stay ahead of trends with new arrivals every day—crafted to suit your lifestyle and fashion.</p>
+      </div>
+      <div class="custom-card4">
+
+        <img class="w-10 " src="./image/fast-delivery.png">
+
+        <h4 class=" text-xl font-bold pt-2">Swift & Free Delivery</h4>
+
+        <p class="pt-2">No delays. No hidden fees. Just fast, secure shipping—right to your doorstep your time.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--new arrival-->
+  <div>
+    <h1 class="text-4xl pl-10 pt-6 font-extrabold">New Arrivals</h1>
+    <div class="grid grid-cols-2 mt-5 pt-10 rounded-e-full gap-5 text-center md:grid-cols-4  mt-5 rounded-e-full">
+
+      <div class="relative">
+        <img class="w-60 h-60 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/n5.jpg" alt="plant">
+        <button
+          class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white px-5 py-2 rounded-md text-black font-medium hover:bg-black hover:text-white transition">
+          Shop Now →
+        </button>
+      </div>
+      <div class="relative">
+        <img class="w-60 h-60 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/n6.jpg" alt="plant">
+        <button
+          class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white px-5 py-2 rounded-md text-black font-medium hover:bg-black hover:text-white transition">
+          Shop Now →
+        </button>
+      </div>
+      <div class="relative">
+        <img class="w-60 h-60 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/n7.jpg" alt="plant">
+        <button
+          class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white px-5 py-2 rounded-md text-black font-medium hover:bg-black hover:text-white transition">
+          Shop Now →
+        </button>
+      </div>
+      <div class="relative">
+        <img class="w-60 h-60 inline hover:shadow-2xl transform hover:-translate-y-2 p-5" src="./image/n8.jpg" alt="plant">
+        <button
+          class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white px-5 py-2 rounded-md text-black font-medium hover:bg-black hover:text-white transition">
+          Shop Now →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Most Wanted Section -->
+  <div>
+    <h1 class="text-4xl pl-10 pt-6 font-extrabold">Most Wanted</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 p-10">
+
+      <!-- Product Card -->
+      <div
+        class="relative bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-transform hover:-translate-y-1">
+        <!-- Sale Badge -->
+        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs px-2 py-1 rounded">sale</span>
+
+        <img class="w-full h-72 object-cover" src="./image/n1.jpg" alt="Most Wanted 1">
+
+        <!-- Wishlist Icon -->
+        <span class="absolute bottom-3 right-3 text-2xl text-black hover:text-red-600 transition">&#9825;</span>
+      </div>
+
+      <!-- Repeat for others -->
+      <div
+        class="relative bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-transform hover:-translate-y-1">
+        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs px-2 py-1 rounded">sale</span>
+        <img class="w-full h-72 object-cover" src="./image/n2.jpg" alt="Most Wanted 2">
+        <span class="absolute bottom-3 right-3 text-2xl text-black hover:text-red-600 transition">&#9825;</span>
+      </div>
+
+      <div
+        class="relative bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-transform hover:-translate-y-1">
+        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs px-2 py-1 rounded">sale</span>
+        <img class="w-full h-72 object-cover" src="./image/n3.jpg" alt="Most Wanted 3">
+        <span class="absolute bottom-3 right-3 text-2xl text-black hover:text-red-600 transition">&#9825;</span>
+      </div>
+
+      <div
+        class="relative bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-transform hover:-translate-y-1">
+        <span class="absolute top-3 left-3 bg-red-600 text-white text-xs px-2 py-1 rounded">sale</span>
+        <img class="w-full h-72 object-cover" src="./image/n4.jpg" alt="Most Wanted 4">
+        <span class="absolute bottom-3 right-3 text-2xl text-black hover:text-red-600 transition">&#9825;</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!--box-->
+  <div class="section__five">
+    <div class="section__five__s1">
+      <img src="c1.jpg">
+    </div>
+    <div class="section__five__s2">
+      <div class="text-content">
+        <h1>Limited Offer</h1>
+        <h3>35% OFF on this for the first 30 Customers</h3>
+      </div>
+    </div>
+  </div>
+
+  <!--input-->
+  <div class="text-center">
+    <h1 class="font-bold text-3xl pt-6">Join our News Letter</h1>
+    <p class="pt-4">Signup for our email newspaper to get exclusive discounts,updates and more</p>
+    <input type="text" placeholder="search" class="border border-black p-3 m-5" style="width:60%;"></input><br>
+    <button class="bg-black text-white p-3">Subscribe</button>
+  </div>
+  <!--footer-->
+  <div>
+    <div class="bg-black text-white p-10 mt-5">
+      <h1 class="text-4xl font-bold ">Nostra</h1>
+      <p class="pt-5">The standard chunk of lorem ipsum used since the 1500s is reproduced below for those interest.</p>
+      <p class="pt-5">@ 2025 Nostra.com</p>
+    </div>
+  </div>
+  <!--script-->
+  <script src="index.js"></script>
+
+<!-- Script (must be placed at the end) -->
+ <script>
+var sidenav = document.getElementById("sidenav");
+var menubar = document.getElementById("menubar");
+var closeNav = document.getElementById("close-nav");  // Get the close button
+
+// Open the sidebar when menu icon is clicked
+menubar.addEventListener("click", function () {
+  sidenav.style.right = "0";
+});
+
+// Close the sidebar when 'X' is clicked
+closeNav.addEventListener("click", function () {
+  sidenav.style.right = "-50%";
+});
+</script>
+
+</body>
+
+</html>
